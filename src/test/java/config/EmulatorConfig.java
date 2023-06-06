@@ -2,9 +2,9 @@ package config;
 
 import org.aeonbits.owner.Config;
 
-@Config.Sources({
+@Config.Sources(
         "classpath:properties/emulator.properties"
-})
+)
 
 public interface EmulatorConfig extends Config {
 
