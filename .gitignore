@@ -10,6 +10,9 @@ build/
 
 ### Gradle ###
 .gradle
+.gradle/wrapper
+.gradlew.bat
+.gradlew
 
 ### Logs ###
 *.log
