@@ -19,14 +19,14 @@ public class TestBase {
     @BeforeAll
     public static void setup() {
         if (deviceHost == null) {
-            deviceHost = "local";
+            deviceHost = "emulator";
         }
 
         switch (deviceHost) {
-            case "local":
+            case "emulator":
                 Configuration.browser = LocalMobileDriver.class.getName();
                 break;
-            case "remote":
+            case "browserstack":
                 Configuration.browser = BrowserstackDriver.class.getName();
                 break;
         }

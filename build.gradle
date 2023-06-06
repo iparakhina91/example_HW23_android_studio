@@ -57,15 +57,15 @@ tasks.withType(Test) {
     }
 }
 
-task local(type: Test) {
+task emulator(type: Test) {
     useJUnitPlatform {
-        includeTags("local")
+        includeTags("emulator")
     }
 }
 
-task remote(type: Test) {
+task browserstack(type: Test) {
     useJUnitPlatform {
-        includeTags("remote")
+        includeTags("browserstack")
     }
 }
 

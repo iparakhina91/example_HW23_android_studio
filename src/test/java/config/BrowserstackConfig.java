@@ -2,9 +2,10 @@ package config;
 
 import org.aeonbits.owner.Config;
 
-@Config.Sources(
-        "classpath:properties/browserstack.properties"
-)
+@Config.Sources({
+        "classpath:properties/browserstack.properties",
+        "system:properties"
+})
 
 public interface BrowserstackConfig extends Config {
 
